@@ -1,4 +1,6 @@
 #!/bin/bash
+# DO NOT USE THIS YET. NEEDS MANY CORRECTIONS DUE TO WRONG PATHS and OTHER ERRORS. ITS FOR JESSIE NOT STRETCH. 
+# STRETCH AND JESSIE version will be done by 2Play!
 
 echo -e "\n****************************************************************"
 echo -e "Welcome to the Moonlight Installer Script for RetroPie v17.10.07"
