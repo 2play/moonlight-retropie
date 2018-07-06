@@ -1,3 +1,7 @@
+# DO NOT USE THIS YET. 
+# NEEDS MANY CORRECTIONS DUE TO WRONG PATHS/ERRORS. ITS FOR JESSIE NOT STRETCH. 
+# STRETCH AND JESSIE version will be done by 2Play!
+
 # moonlight-retropie
 The Install &amp; Setup Script for Moonlight within RetroPie 4.2+ from **TechWizTime**
 
