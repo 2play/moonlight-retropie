@@ -22,7 +22,6 @@ In RetroPie, go to the Command Line and type the following to download the scrip
 
 cd /home/pi/RetroPie/retropiemenu
 wget https://raw.githubusercontent.com/2play/moonlight-steam-script-retropie/master/moonlight.sh
-sudo chown pi:pi ./moonlight.sh
 sudo chmod +x moonlight.sh
 ```
 Then run the script:
