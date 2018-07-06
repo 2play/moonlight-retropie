@@ -2,7 +2,7 @@
 
 # moonlight-steam-script-retropie
 The Install & Setup Script for Moonlight (Steam) to RetroPie. Based on Jessie script written by **TechWizTime**.
-/nNew revamped script that supports both Steatch OS and Jessie OS by **2Play!**
+New revamped script that supports both Steatch OS and Jessie OS by **2Play!**
 
 NOTE: This will be pre-installed on PlayBox release. You can use this to install tot your existing retropiemenu.
 
