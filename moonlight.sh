@@ -1,5 +1,6 @@
 #!/bin/bash
-# Original Jessie Moonlight Script by TechWizTime revamped by 2Play!
+# Based on Jessie Moonlight Script by TechWizTime.
+# New Script Revamped by 2Play!
 # Stretch OS Install Supported
 
 echo -e "\n****************************************************************"
