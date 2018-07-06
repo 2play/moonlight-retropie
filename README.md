@@ -1,11 +1,13 @@
 ## Stretch OS & Jessie OS versions included. New script!
 
 # moonlight-steam-script-retropie
-The Install & Setup Script for Moonlight within RetroPie 4.2+ originally written by **TechWizTime** and revamped by **2Play!**
-NOTE: This will be pre-installed on PlayBox release and you can use this to your retropiemenu.
+The Install & Setup Script for Moonlight (Steam) to RetroPie. Based on Jessie script written by **TechWizTime**.
+New revamped script that supports both Steatch OS and Jessie OS by **2Play!**
+
+NOTE: This will be pre-installed on PlayBox release. You can use this to install tot your existing retropiemenu.
 
 This script will install the Steam Streaming application Moonlight on your Raspberry Pi.
-Highly recommendede using/updating to the latest version of RetroPie script (currently at 4.4.1 lat commit 111043b).
+Highly recommended using/updating to the latest version of RetroPie script (currently at 4.4.1 last commit 111043b).
 
 ## What does this do
 This script currently will do the following:
