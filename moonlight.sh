@@ -71,7 +71,6 @@ case $NUM in
 		  * ) echo "invalid";;
 		esac
 	;;
-
 	2)
 		echo -e "\n   Installing Moonlight - Jessie OS    "
 		echo -e "*****************************************\n"
@@ -125,7 +124,6 @@ case $NUM in
 		  * ) echo "invalid";;
 		esac
 	;;
-
 	3) 
 		echo -e "\n  Pair Moonlight With A PC    "
 		echo -e "********************************\n"
@@ -139,7 +137,6 @@ case $NUM in
 		cd /home/pi/RetroPie/retropiemenu
 		sudo ./moonlight.sh
 	;;
-
 	4)
 		echo -e "\n Create 720p + 1080p Steam Launch Scripts   "
 		echo -e "**********************************************\n"
@@ -188,7 +185,6 @@ case $NUM in
 		cd cd /home/pi/RetroPie/retropiemenu
 		sudo ./moonlight.sh
 	;;
-
 	5)
 		echo -e "\n Remove All Steam Launch Scripts   "
 		echo -e "*************************************\n"
@@ -198,7 +194,6 @@ case $NUM in
 		cd /home/pi/RetroPie/retropiemenu
 		sudo ./moonlight.sh
 	;;
-
 	6)  
 		echo -e "\n Create 480p Steam Launch Scripts   "
 		echo -e "**************************************\n"
@@ -232,7 +227,6 @@ case $NUM in
 		cd /home/pi/RetroPie/retropiemenu
 		sudo ./moonlight.sh
 	;;
-
 	7) 
 		echo -e "\n  Update This Script    "
 		echo -e "**************************\n"
