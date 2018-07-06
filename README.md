@@ -41,5 +41,3 @@ If you use this script in a YouTube video, please give my channel a shout out/su
 | [Discord](https://discord.gg/ZeGCBdm) | [YouTube](https://www.youtube.com/channel/UCHj6THhkEawrZU2bqCn1geA)|
 | --- | --- | --- | --- |
 
-Kind regards,
-2Play!
