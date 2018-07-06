@@ -1,20 +1,18 @@
 #!/bin/bash
-# DO NOT USE THIS YET. NEEDS MANY CORRECTIONS DUE TO WRONG PATHS and OTHER ERRORS. ITS FOR JESSIE NOT STRETCH. 
-# STRETCH AND JESSIE version will be done by 2Play!
 
 echo -e "\n****************************************************************"
-echo -e "Welcome to the Moonlight Installer Script for RetroPie v17.10.07"
+echo -e "   Moonlight Installer (Steam) Script for RetroPie v07.18.2P!"
 echo -e "****************************************************************\n"
 echo -e "Select an option:"
-echo -e " * 1: Install Moonlight,Pair,Install Scripts,Install Menus"
-echo -e " * 2: Install Launch Scripts"
-echo -e " * 3: Remove Launch Scripts"
-echo -e " * 4: Add 480p Launch Scripts"
-echo -e " * 5: Re Pair Moonlight with PC"
-echo -e " * 6: Exit"
-echo -e " * *: NEW MENU ITEMS *"
-echo -e " * 7: Refresh SYSTEMS Config File"
-echo -e " * 8: Update This Script"
+echo -e " * 1: Install Moonlight, Scripts & System Menu - Stretch OS"
+echo -e " * 2: Install Moonlight, Scripts & System Menu - Jessie OS"
+echo -e " * 3: Install Launch Scripts"
+echo -e " * 4: Remove Launch Scripts"
+echo -e " * 5: Install 480p Launch Scripts"
+echo -e " * 6: Pair Moonlight with a PC"
+echo -e " * 7: Moonlight Script Update"
+echo -e " * 8: Exit"
+
 
 
 read NUM
