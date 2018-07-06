@@ -1,6 +1,6 @@
 #!/bin/bash
 # Original Jessie Moonlight Script by TechWizTime revamped by 2Play!
-# Stretch OS Install Supported
+# Stretch OS Install Supported!
 
 echo -e "\n****************************************************************"
 echo -e "   Moonlight Installer (Steam) Script for RetroPie v07.18.2P!"
