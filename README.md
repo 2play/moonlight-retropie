@@ -1,7 +1,7 @@
 # DO NOT USE THIS YET. 
-# Needs Corrections due to wrong paths.errors.
+## Needs Corrections due to wrong paths.errors.
 ITS FOR JESSIE NOT STRETCH. 
-# Stretch OS & fixed Jessie version will be included on the new script! 2Play!
+## Stretch OS & fixed Jessie version will be included on the new script! 2Play!
 
 # moonlight-steam-script-retropie
 The Install & Setup Script for Moonlight within RetroPie 4.2+ originally written by **TechWizTime** and revamped by **2Play!**
@@ -40,3 +40,4 @@ If you use this script in a YouTube video, please give my channel a shout out/su
 
 | [Discord](https://discord.gg/ZeGCBdm) | [YouTube](https://www.youtube.com/channel/UCHj6THhkEawrZU2bqCn1geA)|
 | --- | --- | --- | --- |
+
