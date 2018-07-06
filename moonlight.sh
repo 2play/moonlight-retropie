@@ -4,13 +4,13 @@
 # Stretch OS Install Supported
 
 echo -e "\n****************************************************************"
-echo -e "   Moonlight Installer (Steam) Script for RetroPie v07.18.2P!"
+echo -e "   Moonlight Installer (Steam) Script for RetroPie v06.07.182P"
 echo -e "****************************************************************\n"
-echo -e "Select an option:"
-echo -e " * 1: Step.1: Fresh Install Moonlight & ES System Menu - Stretch OS"
-echo -e " * 2: Step.1: Fresh Install Moonlight & ES System Menu - Jessie OS"
-echo -e " * 3: Step.2: Pair Moonlight with a PC"
-echo -e " * 4: Step.3: Install 750p & 1080p Steam Launch Scripts"
+echo -e "Select a step or option:"
+echo -e " * 1: Fresh Install Moonlight & ES System Menu - Stretch OS"
+echo -e " * 2: Fresh Install Moonlight & ES System Menu - Jessie OS"
+echo -e " * 3: Pair Moonlight with a PC"
+echo -e " * 4: Install 750p & 1080p Steam Launch Scripts"
 echo -e " * 5: Remove Steam Launch Scripts"
 echo -e " * 6: Install 480p Steam Launch Scripts"
 echo -e " * 7: Moonlight Script Update"
@@ -38,14 +38,14 @@ case $NUM in
 		else		
 			mkdir code && cd code && mkdir moonlight && cd ~/code/moonlight
 			wget http://archive.itimmer.nl/itimmer.gpg
-			chown pi:pi /home/pi/itimmer.gpg
-			apt-key add itimmer.gpg		
+			sudo chown pi:pi /home/pi/itimmer.gpg
+			sudo apt-key add itimmer.gpg		
 		fi
 
 		echo -e "\n  System Update & Moonlight Install   "
 		echo -e "****************************************\n"
-		apt-get update -y
-		apt-get install moonlight-embedded -y
+		sudo apt-get update -y
+		sudo apt-get install moonlight-embedded -y
 		
 		
 		echo -e "\n     Create STEAM ES System Menu      "
@@ -58,7 +58,7 @@ case $NUM in
 			sudo sed -i -e 's|</systemList>|  <system>\n    <name>steam</name>\n    <fullname>Steam</fullname>\n    <path>~/RetroPie/roms/moonlight</path>\n    <extension>.sh .SH</extension>\n    <command>bash %ROM%</command>\n    <platform>steam</platform>\n    <theme>steam</theme>\n  </system>\n</systemList>|g' /etc/emulationstation/es_systems.cfg
 		fi
 
-		chown -R pi:pi /home/pi/RetroPie/roms/steam/
+		sudo chown -R pi:pi /home/pi/RetroPie/roms/steam/
 
 		echo -e "Installation Completed."
 		echo -e "We need to perform a reboot now."
@@ -66,7 +66,7 @@ case $NUM in
 		case "$choice" in 
 		  y|Y ) sudo reboot;;
 		  n|N ) cd /home/pi/RetroPie/retropiemenu
-		  ./moonlight.sh
+		  sudo ./moonlight.sh
 		  ;;
 		  * ) echo "invalid";;
 		esac
@@ -92,14 +92,14 @@ case $NUM in
 		else		
 			mkdir code && cd code && mkdir moonlight && cd ~/code/moonlight
 			wget http://archive.itimmer.nl/itimmer.gpg
-			chown pi:pi /home/pi/itimmer.gpg
-			apt-key add itimmer.gpg		
+			sudo chown pi:pi /home/pi/itimmer.gpg
+			sudo apt-key add itimmer.gpg		
 		fi
 
 		echo -e "\n  System Update & Moonlight Install   "
 		echo -e "****************************************\n"
-		apt-get update -y
-		apt-get install moonlight-embedded -y
+		sudo apt-get update -y
+		sudo apt-get install moonlight-embedded -y
 		
 		
 		echo -e "\n     Create STEAM ES System Menu      "
@@ -112,7 +112,7 @@ case $NUM in
 			sudo sed -i -e 's|</systemList>|  <system>\n    <name>steam</name>\n    <fullname>Steam</fullname>\n    <path>~/RetroPie/roms/moonlight</path>\n    <extension>.sh .SH</extension>\n    <command>bash %ROM%</command>\n    <platform>steam</platform>\n    <theme>steam</theme>\n  </system>\n</systemList>|g' /etc/emulationstation/es_systems.cfg
 		fi
 
-		chown -R pi:pi /home/pi/RetroPie/roms/steam/
+		sudo chown -R pi:pi /home/pi/RetroPie/roms/steam/
 
 		echo -e "Installation Completed."
 		echo -e "We need to perform a reboot now."
@@ -120,7 +120,7 @@ case $NUM in
 		case "$choice" in 
 		  y|Y ) sudo reboot;;
 		  n|N ) cd /home/pi/RetroPie/retropiemenu
-		  ./moonlight.sh
+  		  sudo ./moonlight.sh
 		  ;;
 		  * ) echo "invalid";;
 		esac
@@ -137,7 +137,7 @@ case $NUM in
 		
 		echo -e "\n*** Pairing Complete! ***"
 		cd /home/pi/RetroPie/retropiemenu
-		./moonlight.sh
+		sudo ./moonlight.sh
 	;;
 
 	4)
@@ -178,14 +178,15 @@ case $NUM in
 		fi
 		
 		echo -e "Make Scripts Executable"
-		chmod +x 720p30fps.sh
-		chmod +x 720p60fps.sh
-		chmod +x 1080p30fps.sh
-		chmod +x 1080p60fps.sh
-		
+		sudo chmod +x 720p30fps.sh
+		sudo chmod +x 720p60fps.sh
+		sudo chmod +x 1080p30fps.sh
+		sudo chmod +x 1080p60fps.sh
+		sudo chown -R pi:pi /home/pi/RetroPie/roms/steam/
+
 		echo -e "\n*** 720p + 1080p Steam Launch Scripts Creation Completed! ***"
 		cd cd /home/pi/RetroPie/retropiemenu
-		./moonlight.sh
+		sudo ./moonlight.sh
 	;;
 
 	5)
@@ -195,7 +196,7 @@ case $NUM in
 		rm *
 		echo -e "\n*** Removal Completed! ***"
 		cd /home/pi/RetroPie/retropiemenu
-		./moonlight.sh
+		sudo ./moonlight.sh
 	;;
 
 	6)  
@@ -223,12 +224,13 @@ case $NUM in
 		fi
 		
 		echo -e "Make 480p Scripts Executable"
-		chmod +x 480p30fps.sh
-		chmod +x 480p60fps.sh
-		
+		sudo chmod +x 480p30fps.sh
+		sudo chmod +x 480p60fps.sh
+		sudo chown -R pi:pi /home/pi/RetroPie/roms/steam/
+
 		echo -e "\n*** 480p Steam Launch Scripts Completed! ***"
 		cd /home/pi/RetroPie/retropiemenu
-		./moonlight.sh
+		sudo ./moonlight.sh
 	;;
 
 	7) 
@@ -241,12 +243,11 @@ case $NUM in
 		fi
 		cd /home/pi/RetroPie/retropiemenu		
 		wget https://raw.githubusercontent.com/2play/moonlight-steam-script-retropie/master/moonlight.sh
-		chown pi:pi ./moonlight.sh
-		chmod +x moonlight.sh
-		./moonlight.sh
+		sudo chown pi:pi ./moonlight.sh
+		sudo chmod +x moonlight.sh
+		sudo ./moonlight.sh
 	;;
-
-	8)  exit 1;;
-		
 	*) echo "INVALID NUMBER!" ;;
 esac
+	8)  exit 1;;
+	
