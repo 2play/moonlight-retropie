@@ -1,7 +1,4 @@
-# DO NOT USE THIS YET. 
-## Needs Corrections due to wrong paths/errors.
-ITS FOR JESSIE NOT STRETCH. 
-## Stretch OS & fixed Jessie version will be included on the new script!
+## Stretch OS & Jessie OS versions included. New script!
 
 # moonlight-steam-script-retropie
 The Install & Setup Script for Moonlight within RetroPie 4.2+ originally written by **TechWizTime** and revamped by **2Play!**
@@ -22,6 +19,7 @@ In RetroPie, go to the Command Line and type the following to download the scrip
 ```
 cd /home/pi/RetroPie/retropiemenu
 wget https://raw.githubusercontent.com/2play/moonlight-steam-script-retropie/master/moonlight.sh
+sudo chown pi:pi ./moonlight.sh
 sudo chmod +x moonlight.sh
 ```
 Then run the script:
