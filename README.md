@@ -1,5 +1,5 @@
 # DO NOT USE THIS YET. 
-## Needs Corrections due to wrong paths.errors.
+## Needs Corrections due to wrong paths/errors.
 ITS FOR JESSIE NOT STRETCH. 
 ## Stretch OS & fixed Jessie version will be included on the new script! 2Play!
 
