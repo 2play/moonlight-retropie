@@ -36,6 +36,7 @@ case $NUM in
 		then	
 			echo -e "NOTE: GPG Key Exists - Skipping"
 		else		
+			cd ~
 			mkdir code && cd code && mkdir moonlight && cd ~/code/moonlight
 			wget http://archive.itimmer.nl/itimmer.gpg
 			sudo chown pi:pi /home/pi/itimmer.gpg
@@ -130,6 +131,7 @@ case $NUM in
 		
 		echo -e "Once IP inserted of your STEAM PC, you will be given a PIN"
 		echo -e "Input this on the STEAM PC to pair with Moonlight. \n"
+		sudo rm -rf /home/pi/.cache/moonlight/*
 		read -p "Input STEAM PC's IP Address here :`echo $'\n> '`" ip
 		sudo -u pi moonlight pair $ip
 		
